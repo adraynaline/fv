@@ -11,7 +11,7 @@ function connect($login,$password)
 		$sql->bindValue(':password', md5($password), PDO::PARAM_STR);
 					
 		$sql->execute();
-
+		$rows = $sql->fetchAll();
 		$verif_co = $sql->rowCount();
 
 		if($verif_co != 0){

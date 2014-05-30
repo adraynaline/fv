@@ -10,19 +10,19 @@
 	
 </head>
 <body>
+	
 	<div class="height_50"></div>
+	
 	<div id="content">
 		<img id="logo" src="images/private/logo_opacity.png">
-		<div id="comingsoon">
-			<center><p>NEW  SITE <br/>  COMING  SOON</p></center>
-		</div>
+		
 		<div id="slider">
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				<!-- Wrapper for slides -->
 				
 			    <div class="carousel-inner">
 				    <div class="item taille_slider">
-				      <img  src="images/private/banner1.jpg" alt="...">
+				      <img  src="images/private/test.jpg" alt="...">
 				    </div>
 				    <div class="item taille_slider">
 				      <img src="images/private/banner2.jpg" alt="...">
@@ -69,11 +69,11 @@
 			</div>
 		</div>
 		<div id="menu">
-			<img id="fb" src="images/private/facebook_cs.png">
-			<img id="twitter" src="images/private/twitter_cs.png">
-			<img id="insta" src="images/private/insta_cs.png">
-			<img id="tumblr" src="images/private/tumblr_cs.png">
-			<img id="pinterest" src="images/private/pinterest_cs.png">
+			<a href="https://www.facebook.com/pages/FV-Magazine/159236847603038" target="blank"><img id="fb" src="images/private/facebook_cs.png"></a>
+			<a href="https://twitter.com/FVMagNYC" target="blank"><img id="twitter" src="images/private/twitter_cs.png"></a>
+			<a href="http://instagram.com/fvmagazine" target="blank"><img id="insta" src="images/private/insta_cs.png"></a>
+			<a href="http://fvmag.tumblr.com/" target="blank"><img id="tumblr" src="images/private/tumblr_cs.png"></a>
+			<a href="http://www.pinterest.com/fvmagazine" target="blank"><img id="pinterest" src="images/private/pinterest_cs.png"></a>
 			
 			<div class="clear"></div>
 		</div>
@@ -106,7 +106,7 @@
 						<span class="description_info">Note that digital subscriptions are sold <br/>
 						on Magzter Digital Newstand <br/>
 						To order a digital subscription, <br/>
-						please click here.</span><br/><br/>
+						please <a href="http://www.magzter.com/search_magazine.php?search_magazine=fv+magazine&x=0&y=0" target="blank">click here.</a></span><br/><br/>
 
 						<br/>
 						<br/>
@@ -142,7 +142,31 @@
 				</div>
 
 				<div id="pub">
-					<img src="images/private/illu_cs.png">
+					<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel1">
+				<!-- Wrapper for slides -->
+				
+			    <div class="carousel-inner">
+				    <div class="item item2">
+				      <img  src="images/private/ethicapub.jpeg" alt="...">
+				    </div>
+				    <div class="item item2">
+				      <img src="images/private/ethicapub2.jpeg" alt="...">
+				    </div>
+				    
+			   
+			  	</div>
+
+				 
+				<a style="opacity:0" class="left carousel-control" href="#carousel-example-generic2" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a style="opacity:0" class="right carousel-control" href="#carousel-example-generic2" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+				<div style="position:absolute;width:200px;margin-left:60%;margin-top:70px">
+				</div>
+			</div>
+					
 				</div>
 				<div class="clear"></div>
 
@@ -156,8 +180,15 @@
 			<div id="sub">
 				<p id="titre_sub">SUBSCRIBE</p>
 			</div><br>
+			<div id="error">
+
+				<span id="errorcoming"></span>
+			</div>
 			<p id="description_sub">Enter your email on the field below to subscribe to our newsletter and know when the website will be available.</p>
-			<input class="form-control" type="text"> <button class="btn btn-Default">SUBSCRIBE</button>
+			<form method="post" action="?appli=admin&action=add_newsletter" id="formNewsletter">
+				<input class="form-control" type="text" name="mail" id="mail">
+				<button type="submit" class="btn btn-default"><a href='javascript:verif_mail()'>SUBSCRIBE</a></button>
+			</form>
 		</div>
 		<div class="height_20"></div>
 	</div>

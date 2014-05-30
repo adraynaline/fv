@@ -1,4 +1,4 @@
-gf/*GLOBAL*/
+/*GLOBAL*/
 body {
 	font-family: 
 }
@@ -31,6 +31,16 @@ body {
 #subscribe button {
 
 }
+#error {
+float:right;
+display: none;
+padding:10px;
+font-size: 18px;
+}
+#errorcoming {
+	padding:10px;
+}
+
 /**INFO CONTACT US **/
 #contactus {
 	border-top:1px solid black;
@@ -54,6 +64,8 @@ body {
 
 #pub {
 	float:right;
+	width:300px;
+	height:600px;
 	margin-right:50px;
 }
 #pub img{
@@ -79,25 +91,7 @@ footer p {
 	background-color: #000;
 }
 /**SLIDER + CONTENT**/
-#comingsoon {
-	position:absolute;
-	z-index:999;
-	max-width: 1100px;
-	width:100%;
-	margin-top:23%;
-}
-#comingsoon p {
-	max-width:400px;
-	width:40%;
-	font-size:3em;
-	height:100%;
-	min-width: 309px;
-	padding-top:2%;
-	padding-bottom:2%;
-	color:white;
-	text-shadow:2px 2px 5px black;
-	background:rgba(255,255,255,0.5);
-}
+
 #content {
 	max-width:1100px;
 	width:100%;
@@ -202,6 +196,7 @@ footer p {
 	height:40px;
 
 }
+
 #comingsoon {
 	position:absolute;
 	z-index:999;

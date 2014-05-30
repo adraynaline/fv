@@ -1,4 +1,4 @@
-<script src="assets/jquery/jquery.js"></script>
+<script src="assets/jquery/jquery.min.js"></script>
 <script src="assets/ajax/update_beaute.js"></script>
 <script src="assets/ajax/add_issue.js"></script>
 <script src="assets/ajax/add_beaute.js"></script>
@@ -6,15 +6,25 @@
 <script src="assets/ajax/change_pub.js"></script>
 <script src="assets/ajax/delete_beaute.js"></script>
 <script src="assets/ajax/delete_homeslider.js"></script>
+<script src="assets/ajax/add_user_newsletter.js"></script>
 
 <script src="assets/jquery/jquery.form.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/jquery/jquery.pageslide.min.js"></script>
 <script type="text/javascript">
+var email = $('#mail');
+function verif_mail(email) { 
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+} 
+$('#comingsoon').mouseenter(function(){
+	$(this).hide();
+	$('#comingsoon2').slideDown();
+});
 
 $(document).ready(function(){
-if ($(window).width() > 209) {
-$("#comingsoon p").css('font-size':'1em');
+if ($(window).width() < 209) {
+$("#comingsoon p").css('font-size','1em');
 }
 });
 
@@ -30,7 +40,22 @@ $('#menu').on('click',function(){
 			$('#first_step_modele').slideToggle();
 			$('#second_step_modele').slideToggle();
 		});
-	
+$('#beaute_actif').show();
+$('#beaute_inactif').hide();
+$('#actif').on('click',function(){
+	$('#beaute_actif').show();
+	$('#beaute_inactif').hide();
+});	
+$('#inactif').on('click',function(){
+	$('#beaute_actif').hide();
+	$('#beaute_inactif').show();
+});	 
+$('#closeerrorcoming').on('click',function(){
+	$('#error').fadeOut();
+});
+$('.item').first().addClass('active'); 
+$('.item2').first().addClass('active'); 
+
   	//$(".second").pageslide({ direction: "left", modal: true });
   	
 
@@ -185,18 +210,7 @@ function bytesToSize(bytes) {
 
 </script>
 <?php } ?>
-<script type="text/javascript">
-	$('#beaute_actif').show();
-		$('#beaute_inactif').hide();
-	$('#actif').on('click',function(){
-		$('#beaute_actif').show();
-		$('#beaute_inactif').hide();
-	});	
-	$('#inactif').on('click',function(){
-		$('#beaute_actif').hide();
-		$('#beaute_inactif').show();
-	});	 
-	$('.item').first().addClass('active'); 
+
 </script>
 </body>
 </html>

@@ -13,7 +13,7 @@
 	 	$page = 'show';
 	}
 	else {
-		$page = $_GET['page'];
+		$page = $_GET['type'];
 	}
 	//Appel du controleur du modele demandé
 	if (!isset($_GET['appli']))
