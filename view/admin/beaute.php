@@ -69,10 +69,10 @@
 		    	<td>Description</td>
 		    	<td>Date Crea</td>
 		    	<td>Date Update</td>
-		    	<td>Voir</td>
+		    	<td>Show</td>
 		    	<td>Delete</td>
 		    	<td>Update</td>
-		    	<td></td>
+		    	<td>Visibility</td>
 		    </tr>
 		    <?php foreach($beaute1 as $beaute): ?>
 			    <tr>
@@ -82,16 +82,16 @@
 			    	<td><?php echo $beaute['date_crea']; ?></td>
 			    	<td><?php echo $beaute['date_update']; ?></td>
 			    	<td>
-			    		<button class="btn"><a href="?appli=admin&action=showbeaute&id=<?php echo $beaute['id']; ?>">Voir</a></button>
+			    		<button class="btn"><a href="?appli=admin&action=showbeaute&id=<?php echo $beaute['id']; ?>">Show</a></button>
 			    	</td>
 			    	<td>
 			    		<form method="post" action="?appli=admin&action=delete_beaute" id="formDeleteBeaute">
 			    			<input type="hidden" name="id" id="id" value="<?php echo $beaute['id']; ?>">
-			    			<input type="submit" class="btn" value="delete">
+			    			<input type="submit" class="btn" value="Delete">
 			    		</form>
 			    	</td>
 			    	<td><button class="btn"><a href="?appli=admin&action=updatebeaute&id=<?php echo $beaute['id']; ?>">Update</a></button></td>
-			    	<td>Invisible</td>
+			    	<td>Desactivate</td>
 			    </tr>
 			<?php endforeach; ?>
 		  </table>
@@ -102,14 +102,14 @@
 		  <table class="table">
 		    <tr>
 		    	<td>Id</td>
-		    	<td>Titre</td>
+		    	<td>Title</td>
 		    	<td>Description</td>
 		    	<td>Date Crea</td>
 		    	<td>Date Update</td>
-		    	<td>Voir</td>
+		    	<td>Show</td>
 		    	<td>Delete</td>
 		    	<td>Update</td>
-		    	<td></td>
+		    	<td>Visibility</td>
 		    </tr>
 		    <?php foreach($beaute0 as $beaute): ?>
 			    <tr>
@@ -119,16 +119,20 @@
 			    	<td><?php echo $beaute['date_crea']; ?></td>
 			    	<td><?php echo $beaute['date_update']; ?></td>
 			    	<td>
-			    		<button class="btn"><a href="?appli=admin&action=showbeaute&id=<?php echo $beaute['id']; ?>">Voir</a></button>
+			    		<button class="btn"><a href="?appli=admin&action=showbeaute&id=<?php echo $beaute['id']; ?>">Show</a></button>
 			    	</td>
 			    	<td>
 			    		<form method="post" action="?appli=admin&action=delete_beaute" id="formDeleteBeaute">
 			    			<input type="hidden" name="id" id="id" value="<?php echo $beaute['id']; ?>">
-			    			<input type="submit" class="btn" value="delete">
+			    			<input type="submit" class="btn" value="Delete">
 			    		</form>
 			    	</td>
 			    	<td><button class="btn"><a href="?appli=admin&action=updatebeaute&id=<?php echo $beaute['id']; ?>">Update</a></button></td>
-		    		<td>Visible</td>
+		    		<td>
+		    			<button class="btn">
+		    				Activate
+		    			</button>
+		    		</td>
 			    </tr>
 			<?php endforeach; ?>
 		  </table>
