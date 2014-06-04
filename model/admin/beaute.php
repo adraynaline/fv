@@ -17,15 +17,17 @@
 		$beaute0 = $query->fetchAll();
 		return $beaute0;
 	}
-	function add_beaute($title,$description,$link,$photo,$photo2){
+	function add_beaute($photo,$photo2,$title,$description,$forh,$link){
 		global $connexion;
-		$query = $connexion->prepare('INSERT INTO images (title, description, filter ,link, img, min_img) VALUES (:title,:description,:filter,:link,:photo,:photo2)');
-		$query->bindValue(':title', $title, PDO::PARAM_STR);
-		$query->bindValue(':description', $description, PDO::PARAM_STR);
-		$query->bindValue(':filter', 'beaute', PDO::PARAM_STR);
-		$query->bindValue(':link', $link, PDO::PARAM_STR);
+		$query = $connexion->prepare('INSERT INTO images (img, min_img,title, description,forh,filter) VALUES (:photo,:photo2,:title,:description,:forh,:filter)');
 		$query->bindValue(':photo', $photo, PDO::PARAM_STR);
 		$query->bindValue(':photo2', $photo2, PDO::PARAM_STR);
+		$query->bindValue(':title', $title, PDO::PARAM_STR);
+		$query->bindValue(':description', $description, PDO::PARAM_STR);
+		$query->bindValue(':forh', $forh, PDO::PARAM_STR);
+		$query->bindValue(':filter', 'beaute', PDO::PARAM_STR);
+		//$query->bindValue(':link', $link, PDO::PARAM_STR);
+		
 		$query->execute();
 	}
 	function show_beaute_id($id){

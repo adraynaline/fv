@@ -1,7 +1,7 @@
 <?php
 	include_once('model/admin/beaute.php');
-	if(isset($_POST['title'])){
-		add_beaute($_POST['title'],$_POST['description'],$_POST['link'],$_POST['photo'],$_POST['photo2']);
+	if(isset($_POST['photo'])){
+		add_beaute($_POST['photo'],$_POST['photo2'],$_POST['title'],$_POST['description'],$_POST['forh']);
 		$reponse = 'ok';
 	}
 	else {

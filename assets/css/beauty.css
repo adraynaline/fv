@@ -1,0 +1,66 @@
+#choicefor{
+	width:100%;
+}
+#choicefor p {
+	text-align: center;
+	padding:10px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+#choicefor p:first-child{
+	width:50%;
+	float:left;
+}
+#choicefor p:last-child{
+	width:50%;
+	float:right;
+}
+.choiceactive {
+	background:black;
+	color:white;
+
+}
+#forhim {
+	width:100%;
+}
+.forhim {
+	width:48%;
+	float:left;
+	margin-left:1%;
+	margin-right:1%;
+	margin-bottom:4%;
+	border:1px solid black;
+}
+
+.forhim img {
+	width:100%;
+}
+#forher {
+	width:100%;
+}
+.forher {
+	width:48%;
+	float:left;
+	margin-left:1%;
+	margin-right:1%;
+	margin-bottom:4%;
+	border:1px solid black;
+}
+
+.forher img {
+	width:100%;
+}
+.title_all_beauty {
+	font-size:18px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom:-5px;
+}
+.desc_all_beauty {
+	padding:10px;
+	font-size:18px;
+	
+	
+	margin-bottom:-5px;
+}

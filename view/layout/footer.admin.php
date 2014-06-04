@@ -2,15 +2,29 @@
 <script src="assets/ajax/update_beaute.js"></script>
 <script src="assets/ajax/add_issue.js"></script>
 <script src="assets/ajax/add_beaute.js"></script>
+<script src="assets/ajax/add.delete.product.js"></script>
 <script src="assets/ajax/add_pub.js"></script>
 <script src="assets/ajax/change_pub.js"></script>
 <script src="assets/ajax/delete_beaute.js"></script>
 <script src="assets/ajax/delete_homeslider.js"></script>
-<script src="assets/ajax/add_user_newsletter.js"></script>
-
+<script src="assets/jquery/jquery.liteuploader.min.js"></script>
+<script src="assets/jquery/upload_img.js"></script>
+<script src="assets/jquery/tinymce.min.js"></script>
+<script src="assets/ajax/activate.desactivate.img.js"></script>
 <script src="assets/jquery/jquery.form.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/jquery/jquery.pageslide.min.js"></script>
+<script type="text/javascript">
+tinymce.init({
+    selector: "textarea",
+    plugins: [
+        "advlist autolink lists link image charmap print preview anchor",
+        "searchreplace visualblocks code fullscreen",
+        "insertdatetime media table contextmenu paste moxiemanager"
+    ],
+    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+});
+</script>
 <script type="text/javascript">
 var email = $('#mail');
 function verif_mail(email) { 
@@ -40,8 +54,8 @@ $('#menu').on('click',function(){
 			$('#first_step_modele').slideToggle();
 			$('#second_step_modele').slideToggle();
 		});
-$('#beaute_actif').show();
-$('#beaute_inactif').hide();
+$('#beaute_inactif').show();
+$('#beaute_actif').hide();
 $('#actif').on('click',function(){
 	$('#beaute_actif').show();
 	$('#beaute_inactif').hide();
@@ -74,6 +88,7 @@ $(document).ready(function() {
 			return false; 
 		}); 
 }); 
+
 </script>
 <?php if($_GET['action'] != 'beaute'){ ?>
 <script>
@@ -152,6 +167,7 @@ function afterSuccess()
 	var photo2 = $('#ph2').attr('src');
 	$('#photo').val(photo);
 	$('#photo2').val(photo2);
+
 
 }
 

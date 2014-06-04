@@ -2,9 +2,10 @@ $(document).ready(function(){
 	$('#formBeaute').on('submit', function(){
 		var title = $('#title').val();
         var description = $('#description').val();
+        var to = $('#for').val();
         var photo = $('#photo').val();
         var photo2 = $('#photo2').val();
-	if(title == "" || description == "" || photo == "" || photo2 == ""){
+	if(title == "" || description == "" || to == "" || photo == "" || photo2 == ""){
 		alert('Des champs sont incomplets');
 	} else{
 		$.ajax({

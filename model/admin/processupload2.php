@@ -85,6 +85,7 @@ if(isset($_POST))
 		echo '<td align="center">Grande Img 1300px de largeur</td>';
 		echo '<td width="200px" align="center"><img width="200px" id="ph2" src="images/article/'.$NewImageName.'" alt="Resized Image"></td>';
 		echo '</tr>';
+		echo '<tr>';
 		echo '</table>';
 
 		/*
