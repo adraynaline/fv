@@ -15,10 +15,10 @@
 				</td>
 			</tr>
 			<tr style="vertical-align:middle">
-				<td width="50%" align="center" id="redlips">
+				<td style="cursor:pointer" width="50%" align="center" id="redlips">
 					<img width="100%" min-width="400px" src="images/private/redlips-outline.png">
 				</td>
-				<td width="50%" align="center" id="perfum">
+				<td style="cursor:pointer" width="50%" align="center" id="perfum">
 					<img width="100%" min-width="400px" src="images/private/perfum.png">
 				</td>
 			</tr>
