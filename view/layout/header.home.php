@@ -33,6 +33,7 @@
 </div>
 <div class="container">
 <br>
+<div id="header_height">
 	<header>
 		<div id="header_left">
 			<img id="logo_header" src="images/private/logo_b&w.png">
@@ -41,22 +42,36 @@
 
 			<img id="issue_header" src="<?php echo $issue['image']; ?>">
 			<div style="width:400px; height:310px;float:right" >
-				<img width="100%" height="100%" src="<?php echo $pub['image']; ?>">
+				<img width="100%" min-width="400px"height="100%" src="<?php echo $pub['image']; ?>">
 			</div>
 			<div class="clear"></div>
 		</div>
 		<div class="clear"></div>		
 	</header>
+	<div class="clear"></div>		
 	<nav>
 		<img src="images/private/menu_design.png">
+		<script type="text/javascript">if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			write("votre texte");
+		}
+		else {
+			write("votre texte");
+		}
+</script>
+
 		<ul>
 			<li><a href="">HOME</a></li>
-			<li><a href="">FASHION</a></li>
-			<li><a href="">BEAUTY</a></li>
+			<li><a href="?appli=fashion">FASHION</a></li>
+			<li><a href="?appli=beauty">BEAUTY</a></li>
 			<li><a href="">ART+CULTURE</a></li>
 			<li><a href="">LOVE</a></li>
 			<li><a href="">LUXE</a></li>
 			<li><a href="">SHOP</a></li>
 		</ul>
+
+		<div class="clear"></div>		
 		<img src="images/private/menu_design.png">
+		<div class="clear"></div>		
 	</nav>
+	
+</div>
