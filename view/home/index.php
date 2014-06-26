@@ -1,13 +1,10 @@
-
-	<div id="content">
-		<div id="slider">
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			  
-
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner">
+<div id="content">
+	<div id="slider">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
 			  	<?php foreach($img_slider as $img_slider): ?>
-			    <div style="height:602px" class="item">
+			    <div style="max-height:602px;height:100%" class="item">
 			      <img  src="<?php echo $img_slider['min_img']; ?>" alt="...">
 			      <div class="carousel-caption">
 			        <?php echo $img_slider['title']; ?>
@@ -15,55 +12,93 @@
 			      </div>
 			    </div>
 			    <?php endforeach; ?>
-			  </div>
-
-			  <!-- Controls -->
-			  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-			    <span class="glyphicon glyphicon-chevron-left"></span>
-			  </a>
-			  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right"></span>
-			  </a>
 			</div>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+			  <span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
 		</div>
-		<br/>
-		<div id="editor_obsession">
-			<img src="images/private/obsession_editor.png">
+	</div>
+	<br/>
+	<div id="editor_obsession">
+		<img width="100%" src="images/private/obsession_editor.png">
+		<div id="blocs_mobil">
+			<div id="blocs">
+				<div class="bloc_mobil">
+					<div class="img_bloc_mobil">
+					</div>
+					<div class="description_bloc">
+						<p>#A-LIST |  LOS ANGELES <br/><br/>
+							FASHION :  LUCY MC KINTOSH<br/>
+							BY DARREN TIESTE + RAFAEL LINAES
+						</p>
+					</div>
+				</div>
+				<div class="bloc_mobil">
+					<div class="img_bloc_mobil">
+					</div>
+					<div class="description_bloc">
+						<p>#A-LIST |  LOS ANGELES <br/><br/>
+							FASHION :  LUCY MC KINTOSH<br/>
+							BY DARREN TIESTE + RAFAEL LINAES
+						</p>
+					</div>
+				</div>
+				<div class="bloc_mobil">
+					<div class="img_bloc_mobil">
+					</div>
+					<div class="description_bloc">
+						<p>#A-LIST |  LOS ANGELES <br/><br/>
+							FASHION :  LUCY MC KINTOSH<br/>
+							BY DARREN TIESTE + RAFAEL LINAES
+						</p>
+					</div>
+				</div>
+			</div><br/>
+		</div>			
+		
+		<div id="blocs_pc">
 			<div id="blocs">
 				<div class="bloc">
 					<div class="img_bloc">
-
 					</div>
 					<div class="description_bloc">
 						<p>#A-LIST |  LOS ANGELES <br/><br/>
 							FASHION :  LUCY MC KINTOSH<br/>
-							BY DARREN TIESTE + RAFAEL LINAES    </p>
+							BY DARREN TIESTE + RAFAEL LINAES    
+						</p>
 					</div>
 				</div>
 				<div class="bloc">
 					<div class="img_bloc">
-
 					</div>
 					<div class="description_bloc">
 						<p>#A-LIST |  LOS ANGELES <br/><br/>
 							FASHION :  LUCY MC KINTOSH<br/>
-							BY DARREN TIESTE + RAFAEL LINAES    </p>
+							BY DARREN TIESTE + RAFAEL LINAES    
+						</p>
 					</div>
 				</div>
 				<div class="bloc">
 					<div class="img_bloc">
-
 					</div>
 					<div class="description_bloc">
 						<p>#A-LIST |  LOS ANGELES <br/><br/>
 							FASHION :  LUCY MC KINTOSH<br/>
-							BY DARREN TIESTE + RAFAEL LINAES    </p>
+							BY DARREN TIESTE + RAFAEL LINAES    
+						</p>
 					</div>
 				</div>
+				
 			</div>
 		</div>
-		<div id="love-x">
-
-		</div>
 	</div>
+	<div id="love-x">
+
+	</div>
+</div>
 </div>

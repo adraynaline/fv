@@ -12,8 +12,6 @@
 	
 </head>
 <body>
-
-
 <!-- header version ordinateur -->
 <div id="header_pc">
 	<div id="subscribe">
@@ -25,9 +23,9 @@
 					<center>
 						<div id="social_network">
 							<a href="https://www.facebook.com/pages/FV-Magazine/159236847603038" target="blank"><img src="images/private/fb.jpg"></a>
-				<a href="http://instagram.com/fvmagazine" target="blank"><img src="images/private/insta.jpg"></a>
-				<a href="https://twitter.com/FVMagNYC" target="blank"><img src="images/private/twitter.jpg"></a>
-				<a href="http://fvmag.tumblr.com/" target="blank"><img src="images/private/tumblr.jpg"></a>
+							<a href="http://instagram.com/fvmagazine" target="blank"><img src="images/private/insta.jpg"></a>
+							<a href="https://twitter.com/FVMagNYC" target="blank"><img src="images/private/twitter.jpg"></a>
+							<a href="http://fvmag.tumblr.com/" target="blank"><img src="images/private/tumblr.jpg"></a>
 						</div>
 					</center>
 				</td>
@@ -102,7 +100,7 @@
 	<div class="container">
 		<header>
 			<div id="header_left">
-				<img id="logo_header" src="images/private/logo_b&w.png">
+				<img  width="100px" src="images/private/logo_b&w.png">
 			</div>
 			<div id="header_right">
 

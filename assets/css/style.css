@@ -79,16 +79,25 @@ nav ul li:last-child {
 	padding-right: 110px;
 	padding-left:40px;
 }
+#content{
+	max-width:1170px;
+	width:100%;
+	margin: 0 auto;
+}
 #slider {
-	width:1170px;
+
+	max-width:1170px;
+	width:100%;
 	margin-top:25px;
-	height:602px;
+
 }
 #editor_obsession {
-	width:1170px;
+	max-width:1170px;
+	width:100%;
 }
 .bloc {
-	width:360px;
+	max-width:353px;
+	width:100%;
 	float:left;
 	margin-left:40px;
 }
@@ -99,8 +108,8 @@ nav ul li:last-child {
 	margin-top:50px;
 }
 .img_bloc {
-	width:360px;
-	height:360px;
+	width:100%;
+	height:353px;
 	background:black;
 }
 .description_bloc {
@@ -120,4 +129,20 @@ nav ul li:last-child {
 }
 #modal ul li a{
 	color:black;
+}
+#blocs_mobil {
+	margin-top:50px;
+}
+.bloc_mobil {
+	max-width:353px;
+	width:100%;
+	margin:0 auto;
+}
+.bloc_mobil:first-child {
+	margin-left:0px;
+}
+.img_bloc_mobil {
+	width:100%;
+	height:353px;
+	background:black;
 }

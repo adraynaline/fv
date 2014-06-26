@@ -24,10 +24,6 @@
 			</tr>
 		</table>
 	</div>
-	<div id="choicefor">
-		<p>#For Her</p><p> Change #For Him</p>
-		<div class="clear"></div>
-	</div>
 	<br>
 	<div id="forhim">
 		<?php foreach ($forhim as $him): ?>
@@ -43,7 +39,7 @@
 	<div id="forher">
 		<?php foreach ($forher as $her): ?>
 			<div class="forher ">
-				<a href="?appli=beauty&action=show&id=<?php echo $him['id'];?>">
+				<a href="?appli=beauty&action=show&id=<?php echo $her['id'];?>">
 					<div data-imgLiquid-fill="true"
         data-imgLiquid-horizontalAlign="center"
         data-imgLiquid-verticalAlign="50%" style="max-width:500px;width:100%;min-width:300px;max-height:500px;height:30%;min-height:300px" class="imgLiquidFill imgLiquid">
