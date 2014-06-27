@@ -15,8 +15,7 @@
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/jquery/jquery.pageslide.min.js"></script>
 <script type="text/javascript">
-	var info = $('#tinyeditor').val();
-	$('#see_info_recup').append(info);
+
 </script>
 
 <script type="text/javascript">
@@ -41,15 +40,15 @@ $('#menu').on('click',function(){
 			$('#first_step_modele').slideToggle();
 			$('#second_step_modele').slideToggle();
 		});
-$('#beaute_inactif').show();
-$('#beaute_actif').hide();
+$('#beaute_inactif').hide();
+$('#beaute_actif').show();
 $('#actif').on('click',function(){
-	$('#beaute_actif').show();
-	$('#beaute_inactif').hide();
-});	
-$('#inactif').on('click',function(){
 	$('#beaute_actif').hide();
 	$('#beaute_inactif').show();
+});	
+$('#inactif').on('click',function(){
+	$('#beaute_actif').show();
+	$('#beaute_inactif').hide();
 });	 
 $('#closeerrorcoming').on('click',function(){
 	$('#error').fadeOut();

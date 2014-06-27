@@ -1,7 +1,6 @@
 <div id="beaute_content">
 	<br/>
-	<form method="post" action="somepage">
-    <textarea name="content" style="width:100%"></textarea>
+	
 </form>
 	<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
  		 Add an article

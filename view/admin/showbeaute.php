@@ -1,12 +1,9 @@
 <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
- 		 Add content article
-	</button>
-		<br/><br/>
-
-	<!-- Modal -->
-
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  
+	 Add content article
+</button>
+<br/><br/>
+<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">  
 	  <div class="modal-dialog">
 	    <div class="modal-content">
 	      <div class="modal-header">
@@ -17,8 +14,7 @@
 	      <div class="modal-body">
 	        	<form method="post" action="?appli=admin&action=add_content_article" id="formAddContentArticle">
 	        		<input type="hidden" id="id_article" name="id_article" value="<?php echo $show_beaute['id']; ?>">
-	        		<textarea type="text" name="textarea_content" id="tinyeditor" style="width: 400px; height: 200px"></textarea>
-	        	
+	        		<textarea name="textarea_content" class="textarea" id="tinyeditor" style="width: 400px; height: 200px" placeholder="Enter text here"></textarea>
 	      </div>          
 	      <div class="modal-footer">
 			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -31,9 +27,6 @@
 	     
 	    </div>
 	</div>
-	 
-
-
 	<!-- FIN MODAL -->
 <script>
 var editor = new TINY.editor.edit('editor', {
