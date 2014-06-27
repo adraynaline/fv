@@ -5,42 +5,29 @@
 <script src="assets/ajax/add.delete.product.js"></script>
 <script src="assets/ajax/add_pub.js"></script>
 <script src="assets/ajax/change_pub.js"></script>
+<script src="assets/ajax/add_content_article.js"></script>
 <script src="assets/ajax/delete_beaute.js"></script>
 <script src="assets/ajax/delete_homeslider.js"></script>
 <script src="assets/jquery/jquery.liteuploader.min.js"></script>
 <script src="assets/jquery/upload_img.js"></script>
-<script src="assets/jquery/tinymce.min.js"></script>
 <script src="assets/ajax/activate.desactivate.img.js"></script>
 <script src="assets/jquery/jquery.form.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/jquery/jquery.pageslide.min.js"></script>
 <script type="text/javascript">
-tinymce.init({
-    selector: "textarea",
-    plugins: [
-        "advlist autolink lists link image charmap print preview anchor",
-        "searchreplace visualblocks code fullscreen",
-        "insertdatetime media table contextmenu paste moxiemanager"
-    ],
-    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
-});
+	var info = $('#tinyeditor').val();
+	$('#see_info_recup').append(info);
 </script>
+
 <script type="text/javascript">
 var email = $('#mail');
 function verif_mail(email) { 
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 } 
-$('#comingsoon').mouseenter(function(){
-	$(this).hide();
-	$('#comingsoon2').slideDown();
-});
 
-$(document).ready(function(){
-if ($(window).width() < 209) {
-$("#comingsoon p").css('font-size','1em');
-}
-});
+
+
 
 $('#menu').on('click',function(){
   		$('#modal').slideToggle();

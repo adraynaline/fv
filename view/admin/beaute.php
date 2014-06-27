@@ -85,6 +85,7 @@
 		    	<td>Update</td>
 		    	<td>Visibility</td>
 		    	<td>Add Product</td>
+		    	<td>Add specific article</td>
 		    </tr>
 		    <?php foreach($beaute1 as $beaute): ?>
 			    <tr>
@@ -113,6 +114,7 @@
 			    		</form>
 			    	</td>
 			    	<td><a href="?appli=admin&action=product&id=<?php echo $beaute['id']; ?>">Add Product</a></td>
+			    	<td></td>
 			    </tr>
 			<?php endforeach; ?>
 		  </table>

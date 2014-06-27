@@ -7,7 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/admin.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.css">
-	
+	<link rel="stylesheet" href="assets/css/tinyeditor.css">
+<script src="assets/js/tiny.editor.packed.js"></script>
+
 </head>
 <body>
 	<?php if(!isset($_SESSION['login'])){ ?>
