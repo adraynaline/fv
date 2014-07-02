@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#formDeleteHomeslider').on('submit', function(){
+	$('#formDeleteBeaute').on('submit', function(){
 		var id = $('#id').val();
 	if(id == "" ){
 		alert('Des champs sont incomplets');
@@ -11,8 +11,8 @@ $(document).ready(function(){
                 dataType: 'json',
                 success: function(json) {
                     if(json.reponse == 'ok') { 
-                        alert('Beauty article delete from home slider.');
-                        window.setTimeout("location=('?appli=home&action=homeslider');");
+                        alert('Beauty article delete.');
+                        window.setTimeout("location=('?appli=article');");
                     } else {
                         alert('Erreur : '+ json.reponse);
                     }

@@ -40,9 +40,9 @@
 			</div>
 			<div id="header_right">
 
-				<img id="issue_header" src="<?php echo $issue['image']; ?>">
+				<img id="issue_header" src="images/<?php echo $issue['image']; ?>">
 				<div style="width:400px; height:310px;float:right" >
-					<img width="100%" min-width="400px"height="100%" src="<?php echo $pub['image']; ?>">
+					<img width="100%" min-width="400px"height="100%" src="images/<?php echo $pub['image']; ?>">
 				</div>
 				<div class="clear"></div>
 			</div>

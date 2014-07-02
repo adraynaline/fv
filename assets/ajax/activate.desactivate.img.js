@@ -14,7 +14,7 @@ $(document).ready(function(){
                 success: function(json) {
                     if(json.reponse == 'ok') { 
                         alert('Image Activate.');
-                        window.setTimeout("location=('?appli=admin&action="+type+"');");
+                        window.setTimeout("location=('?appli=article');");
                     } else {
                         alert('Erreur : '+ json.reponse);
                     }
@@ -39,7 +39,7 @@ $(document).ready(function(){
                 success: function(json) {
                     if(json.reponse == 'ok') { 
                         alert('Image Desactivate.');
-                        window.setTimeout("location=('?appli=admin&action="+type+"');");
+                        window.setTimeout("location=('?appli=article');");
                     } else {
                         alert('Erreur : '+ json.reponse);
                     }
