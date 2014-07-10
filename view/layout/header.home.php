@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/jquery.pageslide.css">
-	
+
 </head>
 <body>
 <!-- header version ordinateur -->
@@ -41,26 +41,26 @@
 			<div id="header_right">
 
 				<img id="issue_header" src="images/<?php echo $issue['image']; ?>">
-				<div style="width:400px; height:310px;float:right" >
-					<img width="100%" min-width="400px"height="100%" src="images/<?php echo $pub['image']; ?>">
+				<div style="height:310px;float:right" >
+					<img id="dual" width="100%" min-width="400px"height="100%" src="images/<?php echo $pub['image']; ?>">
 				</div>
 				<div class="clear"></div>
 			</div>
 			<div class="clear"></div>		
 		</header>
 		<div class="clear"></div>		
-		<nav id="navpc">
+		<nav id="navpc" class="newnav">
 			<img width="100%" src="images/private/menu_design.png">
-			
 
-			<ul>
-				<li><a href="?appli=home">HOME</a></li>
-				<li><a href="?appli=fashion">FASHION</a></li>
-				<li><a href="?appli=beauty">BEAUTY</a></li>
-				<li><a href="?appli=Art+Culture">ART+CULTURE</a></li>
-				<li><a href="">LOVE</a></li>
-				<li><a href="">LUXE</a></li>
-				<li><a href="">SHOP</a></li>
+
+			<ul class="nav-list">
+				<li class="nav-item"><a href="?appli=home">HOME</a></li>
+				<li class="nav-item"><a href="?appli=fashion">FASHION</a></li>
+				<li class="nav-item"><a href="?appli=beauty">BEAUTY</a></li>
+				<li class="nav-item"><a href="?appli=Art+Culture">ART+CULTURE</a></li>
+				<li class="nav-item"><a href="">LOVE</a></li>
+				<li class="nav-item"><a href="">LUXE</a></li>
+				<li class="nav-item"><a href="">SHOP</a></li>
 			</ul>
 
 			<div class="clear"></div>		
@@ -115,12 +115,12 @@
 
 			<ul>
 				<li><a href="#modal" class="second">=</a></li>
-				
+
 			</ul>
 
 			<div class="clear"></div>		
 			<img width="100%" src="images/private/menu_design.png">
-					
+
 		</nav>
 	</div>
 </div>
