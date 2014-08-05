@@ -13,7 +13,7 @@ $(document).ready(function(){
                 success: function(json) {
                     if(json.reponse == 'ok') { 
                         alert('Image ajoutée.');
-                        window.setTimeout("location=('?appli=admin&action=pub');");
+                        window.setTimeout("location=('?appli=home&action=pub');");
                     } else {
                         alert('Erreur : '+ json.reponse);
                     }

@@ -1,8 +1,12 @@
 $(document).ready(function(){
-	$('#formIssue').on('submit', function(){
-		var nom = $('#nom').val();
+	$('#formBeaute').on('submit', function(){
+		var title = $('#title').val();
+        var description = $('#description').val();
+        var to = $('#for').val();
         var photo = $('#photo').val();
-	if(nom == "" || photo == ""){
+        var photo2 = $('#photo2').val();
+        var filter = $('#filter').val();
+	if(title == "" || description == "" || to == "" || photo == "" || photo2 == "" || filter == ""){
 		alert('Des champs sont incomplets');
 	} else{
 		$.ajax({
@@ -12,8 +16,8 @@ $(document).ready(function(){
                 dataType: 'json',
                 success: function(json) {
                     if(json.reponse == 'ok') { 
-                        alert('Image ajoutée.');
-                        window.setTimeout("location=('?appli=home&action=issue');");
+                        alert('You can now add complementary informations before activate the article.');
+                        window.setTimeout("location=('?appli=article');");
                     } else {
                         alert('Erreur : '+ json.reponse);
                     }

@@ -1,18 +1,19 @@
 $(document).ready(function(){
-	$('#formDeleteHomeslider').on('submit', function(){
-		var id = $('#id').val();
-	if(id == "" ){
-		alert('Des champs sont incomplets');
-	} else{
-		$.ajax({
+    $('#formUpdateBeaute').on('submit', function(){
+        var title = $('#title').val();
+        //var description = $('#description');
+    if(title == "" ){
+        alert('Empty Field');
+    } else{
+        $.ajax({
                 url: $(this).attr('action'),
                 type: $(this).attr('method'),
                 data: $(this).serialize(),
                 dataType: 'json',
                 success: function(json) {
                     if(json.reponse == 'ok') { 
-                        alert('Beauty article delete from home slider.');
-                        window.setTimeout("location=('?appli=home&action=homeslider');");
+                        alert('Beauty article update');
+                        window.setTimeout("location=('?appli=article');");
                     } else {
                         alert('Erreur : '+ json.reponse);
                     }
@@ -20,6 +21,6 @@ $(document).ready(function(){
             });
         }
         return false;
-		
-	});
+        
+    });
 });
