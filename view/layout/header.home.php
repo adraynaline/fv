@@ -9,7 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/jquery.pageslide.css">
-	
 </head>
 <body>
 <!-- header version ordinateur -->
@@ -99,14 +98,22 @@
 	</div><br>
 	<div class="container">
 		<header>
-			<div id="header_left">
-				<img  width="100px" src="images/private/logo_b&w.png">
+			<div id="header_left" class="left">
+				<img width="100px" height="183px" src="images/private/logo_b&w.png" />
 			</div>
-			<div id="header_right">
-
-				
+			<div 
+			class="cycle-slideshow"
+			data-cycle-fx="scrollHorz"
+    		data-cycle-pause-on-hover="true"
+    		data-cycle-speed="100"
+    		>
+				<!-- <div id="header_right" class="right">	 -->	
+					<img width="170px" height="183px" src="images/private/banner1.jpg" />
+					<img width="170px" height="183px" src="images/private/banner2.jpg" />
+					<img width="170px" height="183px" src="images/private/banner3.jpg" />
+				<!-- </div> -->
 			</div>
-			<div class="clear"></div>		
+			<div class="clear"></div>		 
 		</header>
 		<div class="clear"></div>		
 		<nav id="navpc">
@@ -125,4 +132,6 @@
 	</div>
 </div>
 <div class="container">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
 <!-- END HEADER MOBILE -->
